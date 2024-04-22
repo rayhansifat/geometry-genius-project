@@ -65,14 +65,25 @@
                     </div>
                   </div>
                   <!-- Rectangle Card End -->
-                  
+
                   <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p class="text-center text-3xl">Area = b x h</p>
+
+                      <div>
+                        <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="b"> <span class="mr-4 ml-2">Cm</span>
+                        <input  class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="h">
+                        <span>Cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>Cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -97,5 +108,6 @@
 
     <script src="triangle-calculate.js"></script>
     <script src="rectangle-calculate.js"></script>
+    <script src="parallelogram-calculate.js"></script>
 </body>
 </html>
